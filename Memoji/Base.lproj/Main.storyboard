@@ -1,24 +1,422 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UVm-sg-8Bd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="2jy-6Y-bjb">
+            <objects>
+                <viewController id="UVm-sg-8Bd" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yvc-Me-CnY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d8G-zV-o7c">
+                                <rect key="frame" x="46.5" y="283.5" width="281" height="100"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="A7m-wF-TwP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="aJM-Lh-6Wd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEM😃JI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMY-0C-T68">
+                                <rect key="frame" x="0.0" y="20" width="375" height="263.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d8G-zV-o7c" firstAttribute="centerX" secondItem="Yvc-Me-CnY" secondAttribute="centerX" id="644-cT-wpQ"/>
+                            <constraint firstItem="d8G-zV-o7c" firstAttribute="centerY" secondItem="Yvc-Me-CnY" secondAttribute="centerY" id="6M3-hv-Cub"/>
+                            <constraint firstItem="d8G-zV-o7c" firstAttribute="width" secondItem="Yvc-Me-CnY" secondAttribute="width" multiplier="75%" id="BHR-vZ-AZa"/>
+                            <constraint firstItem="gMY-0C-T68" firstAttribute="leading" secondItem="ASF-ql-G7m" secondAttribute="leading" id="BKy-tD-JEa"/>
+                            <constraint firstItem="d8G-zV-o7c" firstAttribute="top" secondItem="gMY-0C-T68" secondAttribute="bottom" id="Nja-0P-8R0"/>
+                            <constraint firstItem="ASF-ql-G7m" firstAttribute="trailing" secondItem="gMY-0C-T68" secondAttribute="trailing" id="SI8-Uu-IvT"/>
+                            <constraint firstItem="gMY-0C-T68" firstAttribute="top" secondItem="ASF-ql-G7m" secondAttribute="top" id="iZA-Vc-43C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ASF-ql-G7m"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FHO-0B-I1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-604" y="133"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Memoji" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pEy-yA-iOw">
+                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Yt3-r1-zpZ">
+                                        <rect key="frame" x="8" y="8" width="359" height="84"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qt-Er-tDo">
+                                                <rect key="frame" x="0.0" y="0.0" width="179.5" height="84"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iul-il-fLc">
+                                                <rect key="frame" x="179.5" y="0.0" width="179.5" height="84"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Yt3-r1-zpZ" secondAttribute="trailing" constant="8" id="3LY-Jb-ADy"/>
+                                    <constraint firstAttribute="height" constant="100" id="5Oh-6g-8lZ"/>
+                                    <constraint firstItem="Yt3-r1-zpZ" firstAttribute="top" secondItem="pEy-yA-iOw" secondAttribute="top" constant="8" id="9pL-lU-bt0"/>
+                                    <constraint firstItem="Yt3-r1-zpZ" firstAttribute="leading" secondItem="pEy-yA-iOw" secondAttribute="leading" constant="8" id="faa-qI-Q0g"/>
+                                    <constraint firstAttribute="bottom" secondItem="Yt3-r1-zpZ" secondAttribute="bottom" constant="8" id="hnn-wv-aAB"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQa-UJ-HPf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="567"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3SQ-OF-XRE">
+                                        <rect key="frame" x="37.5" y="101" width="300" height="365"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JQX-Zn-7m1">
+                                                <rect key="frame" x="0.0" y="0.0" width="300" height="54.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLr-bM-zv8" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="54.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="LLr-bM-zv8" secondAttribute="height" multiplier="1:1" id="aBC-gJ-A5U"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g3W-8F-xX3"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2c-S2-299" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="61.5" y="0.0" width="53.5" height="54.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iVv-Iz-4aw"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvS-Te-UGk" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="123" y="0.0" width="54" height="54.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mde-E3-tyb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJt-dy-E13" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="185" y="0.0" width="53.5" height="54.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GXB-E9-1yW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Njh-Nq-FuW" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="246.5" y="0.0" width="53.5" height="54.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="akP-h3-MyV"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ypE-Zz-gZE">
+                                                <rect key="frame" x="0.0" y="62.5" width="300" height="54"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i47-pn-6je" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E2H-zg-XzS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITf-1W-HsI" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="61.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Klw-MY-YvC"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPP-R6-b6E" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="123" y="0.0" width="54" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OJi-Mt-hVN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8T-Bb-hVZ" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="185" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hQd-sc-6fA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flU-pL-hB4" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="246.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BCF-dW-0Vy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aGb-Vw-axv">
+                                                <rect key="frame" x="0.0" y="124.5" width="300" height="54"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hx-DU-Lwa" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ir-CH-A0G"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uqw-26-egZ" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="61.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0OQ-D9-mW1"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgW-fm-lza" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="123" y="0.0" width="54" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2JP-sh-hPM"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80J-Ey-Dcz" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="185" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o5N-Tn-w3A"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYk-oH-qjn" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="246.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YNx-kb-xVz"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v7c-OL-eK6">
+                                                <rect key="frame" x="0.0" y="186.5" width="300" height="54"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="15" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyW-kr-7eZ" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BF1-q3-0wg"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="16" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PrI-3h-yvC" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="61.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J9C-ya-DSn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="17" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fxo-k2-Hnf" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="123" y="0.0" width="54" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tud-6o-PFN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="18" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIx-y6-Z4P" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="185" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xmp-AW-UEo"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="19" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kf7-K3-mDc" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="246.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nLk-Iv-R9H"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xNO-42-hmc">
+                                                <rect key="frame" x="0.0" y="248.5" width="300" height="54"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xX-DA-XBO" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sse-ey-9AE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="21" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nap-XU-T4f" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="61.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="etX-LL-TqA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="22" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1W-ja-rDf" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="123" y="0.0" width="54" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nID-4l-N41"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="23" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7b-7S-l5J" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="185" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8q-o4-GOA"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="24" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqp-eh-Ixw" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="246.5" y="0.0" width="53.5" height="54"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7Q-D2-zCj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wy2-C9-tz8">
+                                                <rect key="frame" x="0.0" y="310.5" width="300" height="54.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYx-KQ-dE0" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="53.5" height="54.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T4r-ed-3cb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="26" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHg-Ni-BGc" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="61.5" y="0.0" width="53.5" height="54.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tgJ-Oj-UiN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="27" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HsV-m2-Nbd" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="123" y="0.0" width="54" height="54.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cy4-Ss-cbI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="28" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fxm-zO-Pqe" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="185" y="0.0" width="53.5" height="54.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qqn-tB-AFD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="29" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Imu-Hb-6c7" customClass="MemoryButton" customModule="Memoji" customModuleProvider="target">
+                                                        <rect key="frame" x="246.5" y="0.0" width="53.5" height="54.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                                        <connections>
+                                                            <action selector="memoryButtonHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XDN-nV-Lzs"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1's Turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dda-3Y-afZ">
+                                        <rect key="frame" x="37.5" y="474" width="300" height="85"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dda-3Y-afZ" firstAttribute="top" secondItem="3SQ-OF-XRE" secondAttribute="bottom" constant="8" id="FnR-7v-0kx"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dda-3Y-afZ" secondAttribute="bottom" constant="8" id="g64-PW-c9t"/>
+                                    <constraint firstItem="Dda-3Y-afZ" firstAttribute="width" secondItem="3SQ-OF-XRE" secondAttribute="width" id="olT-4C-KMY"/>
+                                    <constraint firstItem="3SQ-OF-XRE" firstAttribute="centerX" secondItem="SQa-UJ-HPf" secondAttribute="centerX" id="tUX-qa-bFJ"/>
+                                    <constraint firstItem="3SQ-OF-XRE" firstAttribute="width" secondItem="SQa-UJ-HPf" secondAttribute="width" multiplier="80%" id="vLh-Tg-WtE"/>
+                                    <constraint firstItem="Dda-3Y-afZ" firstAttribute="centerX" secondItem="SQa-UJ-HPf" secondAttribute="centerX" id="vS7-rn-ATc"/>
+                                    <constraint firstItem="3SQ-OF-XRE" firstAttribute="centerY" secondItem="SQa-UJ-HPf" secondAttribute="centerY" id="xb1-Fr-1cP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.16078431372549018" green="0.50196078431372548" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SQa-UJ-HPf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="38h-d5-VEm"/>
+                            <constraint firstItem="pEy-yA-iOw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4mo-Kr-pMQ"/>
+                            <constraint firstItem="SQa-UJ-HPf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="MXG-hq-KZ4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pEy-yA-iOw" secondAttribute="bottom" id="RUQ-Go-dML"/>
+                            <constraint firstItem="SQa-UJ-HPf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="T4B-xV-1TZ"/>
+                            <constraint firstItem="pEy-yA-iOw" firstAttribute="top" secondItem="SQa-UJ-HPf" secondAttribute="bottom" id="Xag-Ep-T1R"/>
+                            <constraint firstItem="pEy-yA-iOw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="eJZ-Dn-kaU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="infoLabel" destination="Dda-3Y-afZ" id="SCR-4l-a05"/>
+                        <outletCollection property="scoreLabels" destination="1Qt-Er-tDo" collectionClass="NSMutableArray" id="rnF-Vi-6Od"/>
+                        <outletCollection property="scoreLabels" destination="Iul-il-fLc" collectionClass="NSMutableArray" id="ras-Uc-ZJU"/>
+                        <outletCollection property="memoryButtons" destination="LLr-bM-zv8" collectionClass="NSMutableArray" id="dtS-HK-P8c"/>
+                        <outletCollection property="memoryButtons" destination="V2c-S2-299" collectionClass="NSMutableArray" id="jOC-Jt-t3s"/>
+                        <outletCollection property="memoryButtons" destination="gvS-Te-UGk" collectionClass="NSMutableArray" id="ySj-f3-FDX"/>
+                        <outletCollection property="memoryButtons" destination="qJt-dy-E13" collectionClass="NSMutableArray" id="CXr-NS-etf"/>
+                        <outletCollection property="memoryButtons" destination="Njh-Nq-FuW" collectionClass="NSMutableArray" id="ZB8-Fs-1Xr"/>
+                        <outletCollection property="memoryButtons" destination="i47-pn-6je" collectionClass="NSMutableArray" id="lSZ-0c-LJA"/>
+                        <outletCollection property="memoryButtons" destination="ITf-1W-HsI" collectionClass="NSMutableArray" id="18u-ih-Gv4"/>
+                        <outletCollection property="memoryButtons" destination="ZPP-R6-b6E" collectionClass="NSMutableArray" id="2da-YG-ZqQ"/>
+                        <outletCollection property="memoryButtons" destination="K8T-Bb-hVZ" collectionClass="NSMutableArray" id="pDO-Uy-y9c"/>
+                        <outletCollection property="memoryButtons" destination="flU-pL-hB4" collectionClass="NSMutableArray" id="DMT-Ug-cc8"/>
+                        <outletCollection property="memoryButtons" destination="5Hx-DU-Lwa" collectionClass="NSMutableArray" id="VPE-qX-TrI"/>
+                        <outletCollection property="memoryButtons" destination="uqw-26-egZ" collectionClass="NSMutableArray" id="rZO-VB-beY"/>
+                        <outletCollection property="memoryButtons" destination="mgW-fm-lza" collectionClass="NSMutableArray" id="Fbl-Rj-VEq"/>
+                        <outletCollection property="memoryButtons" destination="80J-Ey-Dcz" collectionClass="NSMutableArray" id="rWf-tm-5VG"/>
+                        <outletCollection property="memoryButtons" destination="zYk-oH-qjn" collectionClass="NSMutableArray" id="jr2-kY-ISI"/>
+                        <outletCollection property="memoryButtons" destination="wyW-kr-7eZ" collectionClass="NSMutableArray" id="1yi-kL-Qxb"/>
+                        <outletCollection property="memoryButtons" destination="PrI-3h-yvC" collectionClass="NSMutableArray" id="CnQ-j3-Jmp"/>
+                        <outletCollection property="memoryButtons" destination="Fxo-k2-Hnf" collectionClass="NSMutableArray" id="k7X-5X-Rc8"/>
+                        <outletCollection property="memoryButtons" destination="IIx-y6-Z4P" collectionClass="NSMutableArray" id="c8F-Sm-ha3"/>
+                        <outletCollection property="memoryButtons" destination="kf7-K3-mDc" collectionClass="NSMutableArray" id="sty-rx-Pte"/>
+                        <outletCollection property="memoryButtons" destination="4xX-DA-XBO" collectionClass="NSMutableArray" id="19P-qh-bFo"/>
+                        <outletCollection property="memoryButtons" destination="Nap-XU-T4f" collectionClass="NSMutableArray" id="haS-QH-nCi"/>
+                        <outletCollection property="memoryButtons" destination="r1W-ja-rDf" collectionClass="NSMutableArray" id="odS-6H-hgn"/>
+                        <outletCollection property="memoryButtons" destination="U7b-7S-l5J" collectionClass="NSMutableArray" id="9Ao-CK-xuc"/>
+                        <outletCollection property="memoryButtons" destination="Nqp-eh-Ixw" collectionClass="NSMutableArray" id="tGX-Hb-UlI"/>
+                        <outletCollection property="memoryButtons" destination="yYx-KQ-dE0" collectionClass="NSMutableArray" id="s39-gd-76D"/>
+                        <outletCollection property="memoryButtons" destination="fHg-Ni-BGc" collectionClass="NSMutableArray" id="y93-oZ-R0y"/>
+                        <outletCollection property="memoryButtons" destination="HsV-m2-Nbd" collectionClass="NSMutableArray" id="PqI-k4-2qz"/>
+                        <outletCollection property="memoryButtons" destination="fxm-zO-Pqe" collectionClass="NSMutableArray" id="uSz-vf-VPR"/>
+                        <outletCollection property="memoryButtons" destination="Imu-Hb-6c7" collectionClass="NSMutableArray" id="2gw-d9-JiP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
         </scene>
     </scenes>
 </document>

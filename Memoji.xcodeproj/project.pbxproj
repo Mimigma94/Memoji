@@ -12,6 +12,7 @@
 		1559C9D02180951000AE262E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1559C9CE2180951000AE262E /* Main.storyboard */; };
 		1559C9D22180951200AE262E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1559C9D12180951200AE262E /* Assets.xcassets */; };
 		1559C9D52180951200AE262E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1559C9D32180951200AE262E /* LaunchScreen.storyboard */; };
+		1559C9DD2180A1BD00AE262E /* MemoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559C9DC2180A1BD00AE262E /* MemoryButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1559C9D12180951200AE262E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1559C9D42180951200AE262E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1559C9D62180951200AE262E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1559C9DC2180A1BD00AE262E /* MemoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				1559C9D12180951200AE262E /* Assets.xcassets */,
 				1559C9D32180951200AE262E /* LaunchScreen.storyboard */,
 				1559C9D62180951200AE262E /* Info.plist */,
+				1559C9DC2180A1BD00AE262E /* MemoryButton.swift */,
 			);
 			path = Memoji;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			files = (
 				1559C9CD2180951000AE262E /* ViewController.swift in Sources */,
 				1559C9CB2180951000AE262E /* AppDelegate.swift in Sources */,
+				1559C9DD2180A1BD00AE262E /* MemoryButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MSS59579UT;
 				INFOPLIST_FILE = Memoji/Info.plist;
@@ -289,6 +294,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = piper.Memoji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -298,6 +304,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MSS59579UT;
 				INFOPLIST_FILE = Memoji/Info.plist;
@@ -307,6 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = piper.Memoji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
